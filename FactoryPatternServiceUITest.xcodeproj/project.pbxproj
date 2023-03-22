@@ -11,6 +11,11 @@
 		09311FEA29CA8F6900343147 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09311FE929CA8F6900343147 /* ContentView.swift */; };
 		09311FEC29CA8F6A00343147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09311FEB29CA8F6A00343147 /* Assets.xcassets */; };
 		09311FEF29CA8F6A00343147 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09311FEE29CA8F6A00343147 /* Preview Assets.xcassets */; };
+		09311FF729CA905700343147 /* StubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09311FF629CA905700343147 /* StubData.swift */; };
+		09311FFA29CA90AD00343147 /* AcronymObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09311FF929CA90AD00343147 /* AcronymObject.swift */; };
+		09311FFD29CA91E300343147 /* AcronymNetworkingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09311FFC29CA91E300343147 /* AcronymNetworkingServices.swift */; };
+		0931200029CA93AF00343147 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09311FFF29CA93AF00343147 /* NetworkingService.swift */; };
+		0931200429CA94ED00343147 /* NetworkingServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931200329CA94ED00343147 /* NetworkingServiceFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		09311FE929CA8F6900343147 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09311FEB29CA8F6A00343147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09311FEE29CA8F6A00343147 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09311FF629CA905700343147 /* StubData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubData.swift; sourceTree = "<group>"; };
+		09311FF929CA90AD00343147 /* AcronymObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymObject.swift; sourceTree = "<group>"; };
+		09311FFC29CA91E300343147 /* AcronymNetworkingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymNetworkingServices.swift; sourceTree = "<group>"; };
+		09311FFF29CA93AF00343147 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		0931200329CA94ED00343147 /* NetworkingServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceFactory.swift; sourceTree = "<group>"; };
+		0931200529CA959F00343147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,14 @@
 		09311FE629CA8F6900343147 /* FactoryPatternServiceUITest */ = {
 			isa = PBXGroup;
 			children = (
+				0931200529CA959F00343147 /* Info.plist */,
+				0931200229CA94D200343147 /* Factories */,
+				0931200129CA945700343147 /* Views */,
+				09311FFE29CA925000343147 /* Protocols */,
+				09311FFB29CA91C200343147 /* NetworkingServices */,
+				09311FF829CA908F00343147 /* Models */,
+				09311FF529CA903F00343147 /* Utilities */,
 				09311FE729CA8F6900343147 /* FactoryPatternServiceUITestApp.swift */,
-				09311FE929CA8F6900343147 /* ContentView.swift */,
 				09311FEB29CA8F6A00343147 /* Assets.xcassets */,
 				09311FED29CA8F6A00343147 /* Preview Content */,
 			);
@@ -65,6 +82,54 @@
 				09311FEE29CA8F6A00343147 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09311FF529CA903F00343147 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09311FF629CA905700343147 /* StubData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09311FF829CA908F00343147 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09311FF929CA90AD00343147 /* AcronymObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09311FFB29CA91C200343147 /* NetworkingServices */ = {
+			isa = PBXGroup;
+			children = (
+				09311FFC29CA91E300343147 /* AcronymNetworkingServices.swift */,
+			);
+			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
+		09311FFE29CA925000343147 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09311FFF29CA93AF00343147 /* NetworkingService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0931200129CA945700343147 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09311FE929CA8F6900343147 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0931200229CA94D200343147 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				0931200329CA94ED00343147 /* NetworkingServiceFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +204,11 @@
 			files = (
 				09311FEA29CA8F6900343147 /* ContentView.swift in Sources */,
 				09311FE829CA8F6900343147 /* FactoryPatternServiceUITestApp.swift in Sources */,
+				09311FFA29CA90AD00343147 /* AcronymObject.swift in Sources */,
+				0931200029CA93AF00343147 /* NetworkingService.swift in Sources */,
+				09311FFD29CA91E300343147 /* AcronymNetworkingServices.swift in Sources */,
+				0931200429CA94ED00343147 /* NetworkingServiceFactory.swift in Sources */,
+				09311FF729CA905700343147 /* StubData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +340,7 @@
 				DEVELOPMENT_TEAM = 93TAG27MAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FactoryPatternServiceUITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +370,7 @@
 				DEVELOPMENT_TEAM = 93TAG27MAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FactoryPatternServiceUITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
